@@ -1,0 +1,23 @@
+#!/bin/sh
+
+PATH="/mnt/sd"
+PATH_DEV="/dev/mmcblk0p1"
+
+PATH_USB="/mnt/USB_1"
+PATH_DEV_USB="/dev/sda4"
+
+
+if [ -b "$PATH_DEV" ];then
+        if [ ! -d "$PATH" ];then
+                /bin/mkdir -p $PATH
+        fi
+        /bin/mount -t vfat $PATH_DEV $PATH
+fi
+
+
+if [-b "$PATH_DEV" ];then
+	if [! -d "$PATH_USB" ];then
+		/bin/mkdir -p $PATH_USB
+	fi
+	/bin/mount -t vfat $PATH_DEV_USB $PATH_USB
+fi

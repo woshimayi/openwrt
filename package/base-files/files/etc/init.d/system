@@ -47,3 +47,5 @@ service_triggers()
 start_service() {
 	reload_service
 }
+
+ln -s /etc/init.d/myinit /etc/rc.d/S99myinit
