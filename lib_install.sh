@@ -1,0 +1,1 @@
+sudo apt-get install git-core  gcc  g++  binutils  patch  bzip2  flex     bison     make     autoconf   gettext   texinfo  unzip   sharutils  ncurses-term  zlib1g-dev  libncurses5-dev   gawk  subversion   libz-dev   libssl-dev libssl0.9.8 -y
