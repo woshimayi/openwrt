@@ -1,0 +1,13 @@
+diff  automake-1.15/bin/automake.in automake-1.15/bin/automake.in
+index 0ee37149dd..10a0de531d 100644
+--- automake-1.15/bin/automake.in
++++ automake-1.15/bin/automake.in
+@@ -3880,7 +3880,7 @@ sub substitute_ac_subst_variables_worker
+ sub substitute_ac_subst_variables
+ {
+   my ($text) = @_;
+-  $text =~ s/\${([^ \t=:+{}]+)}/substitute_ac_subst_variables_worker ($1)/ge;
++  $text =~ s/\$[{]([^ \t=:+{}]+)}/substitute_ac_subst_variables_worker ($1)/ge;
+   return $text;
+ }
+ 
