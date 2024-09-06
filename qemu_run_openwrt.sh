@@ -1,5 +1,5 @@
 #!/bin/sh
-IMAGE=bin/ramips/openwrt-armvirt-32-zImage-initramfs
+IMAGE=bin/targets/armvirt/32/openwrt-armvirt-32-zImage-initramfs
 LAN=ledetap0
 # create tap interface which will be connected to LEDE LAN NIC
 ip tuntap add mode tap $LAN
